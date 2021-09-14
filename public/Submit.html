@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Thank You!</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="javascript" href="app.js">
+</head>
+
+<body>
+
+
+
+  <div class="box">
+    <div class="box-content">
+      <h1> Thank You For Submitting!</h1>
+      <p>
+        We will contact you soon!
+      </p>
+
+      <button class="back">Go Back to Home Page</button>
+    </div>
+  </div>
+
+  <script>
+
+    var back = document.querySelector(".back")
+
+    back.addEventListener("click",  () => {
+      location.href = "/"
+
+    });
+  </script>
+
+</body>
+
+</html>
