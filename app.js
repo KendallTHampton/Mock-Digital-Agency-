@@ -36,7 +36,20 @@ app.get("/Submit.html", function(request, response) {
 
 
 
+app.post("/", (req, res) => {
 
+  var info = {
+    option: req.body.reasons,
+    firstName: req.body.fName,
+    lastName: req.body.lName,
+    email: req.body.email
+  }
+
+
+  console.log(info);
+
+  res.sendFile(__dirname + "/public/Submit.html")
+})
 
 
 
