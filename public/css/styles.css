@@ -4,12 +4,9 @@
 
 }
 
-h1 {
-  font-family: 'Poppins', sans-serif;
-}
 
 .hero{
-background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url("Images/lights.jpg");
+background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url("Images/team.jpg");
 background-size: cover;
 background-position: center;
 height: 100vh;
@@ -49,6 +46,7 @@ width: 100vw;
   display: flex;
   justify-content: space-between;
   margin: 0 25px;
+  font-size: 1.2rem;
 
 
 }
@@ -102,7 +100,7 @@ border-radius: 10px;
 
 
 .home .btn:hover{
-  background-color: #0471b5;
+  background-color: #4a4a4a;
   transition: 1s;
 }
 
@@ -111,7 +109,8 @@ border-radius: 10px;
 .services{
   height:100%;
   width: 100vw;
-  background-color: white;
+  background-color: #f0f0f0;
+  /* background: linear-gradient(to bottom left, #FF9C9C, #D1E7FF); */
   color: black;
   position: relative;
   display: flex;
@@ -130,21 +129,18 @@ height: 80%;
 
 .about{
 margin: 0px 0px;
-font-family: "Poppins", sans-serif;
+
+
+
 }
 
-.about h2{
-font-size: 2rem;
+.about h1{
+font-size: 2.2rem;
 margin-bottom: 20px;
-
-color: #0471b5;
+color: black;
+font-family: 'Roboto', sans-serif;
+font-weight: 500;
 }
-
-.about p{
-
-}
-
-
 
 
 .row{
@@ -152,8 +148,7 @@ color: #0471b5;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
   text-align: center;
-  margin-top: 30px;
-
+  margin: 60px;
   height: 50%;
 
 
@@ -161,15 +156,19 @@ color: #0471b5;
 }
 
 .col {
-
-padding: 5px;
+padding: 10px;
   cursor: pointer;
-
-
+  background-color: white;
+box-shadow: 0px 20px 20px rgba(0,0,0,0.5);
 }
 
+
+.col1{
+}
+
+
 .col:hover {
-box-shadow: 0px 20px 20px rgba(0,0,0,0.5);
+
 transform: scale(1.05);
 transition: .5s;
 
@@ -178,7 +177,7 @@ transition: .5s;
 
 .col h1{
   margin: 10px;
-  color: #0471b5;
+  color: black;
 }
 
 .col p{
@@ -192,20 +191,45 @@ max-width: 100px;
 positon: relative;
 }
 
-/* FOOTER */
+/* TESTIOMONIALS */
 
-.footer{
+.testimonials{
+height: 100%;
+width: 100vh;
+background-color: #ffffff;
+color: black;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* CONTACT PAGE */
+
+.contact-box{
   height: auto;
   width: 100%;
-  background-color: #0471b5;
+  background-color: #f0f0f0;
+  font-family: 'Poppins', sans-serif;
 }
 
 
 .contact{
+
   padding: 30px;
   margin: 0px 80px;
   height: auto;
-  color: white;
+  color: black;
 text-align: left;
 }
 
@@ -218,7 +242,7 @@ text-align: left;
 .form{
   border: 3px solid #fff;
   padding: 10px;
-  background-color: grey;
+  background-color: white;
   font-size: 1.2rem;
   width: 100%;
 }
@@ -249,16 +273,31 @@ box-sizing: border-box;
 }
 
 .submit:hover{
-  background-color: #91e8fa;
   transition: 1s;
 }
+
+
+/* FOOTER */
+.footer{
+  background-color: black;
+  height: 50px;
+  width: auto;
+  color: white;
+  text-align: center;
+  padding: 60px;
+
+}
+
+
+
+
 
 /* BOX PAGE */
 
 .box {
   margin: 10px;
   height: 200px;
-  background-color: #ffe9c9;
+  background-color: #f0f0f0;
   position: relative;
 }
 
@@ -283,6 +322,12 @@ box-sizing: border-box;
   cursor: pointer;
 
 }
+
+
+
+
+
+
 
 /* MEDIA QUERY */
 
