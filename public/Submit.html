@@ -12,14 +12,14 @@
 
 
 
-  <div class="box">
-    <div class="box-content">
+  <div class="submit">
+    <div class="submit-content">
       <h1> Thank You For Submitting!</h1>
       <p>
         We will contact you soon!
       </p>
 
-      <button class="back">Go Back to Home Page</button>
+      <button class="back submit__button">Go Back to Home Page</button>
     </div>
   </div>
 
@@ -27,7 +27,8 @@
 
     var back = document.querySelector(".back")
 
-    back.addEventListener("click",  () => {
+    back.addEventListener("click", () =>
+    {
       location.href = "/"
 
     });
